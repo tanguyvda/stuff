@@ -1,0 +1,103 @@
+body {
+  font-family: 'Calibri', sans-serif;
+  font-size: 10pt;
+}
+
+h1 {
+  border-bottom: 1px solid #201751;
+  color: #201751;
+  counter-reset: h2;
+  font-size: 26pt;
+}
+
+h2 {
+  border-bottom: 1px solid #0072CE;
+  color: #0072CE;
+  counter-reset: h3;
+  font-size: 16pt;
+  font-weight: bold;
+}
+
+h3 {
+  color: #0072CE;
+  counter-reset: h4;
+  font-size: 14pt;
+  font-weight: bold;
+}
+
+h4 {
+  color: #40A52B;
+  counter-reset: h5;
+  font-size: 12pt;
+  font-weight: bold;
+}
+
+h5 {
+  color: #009F95;
+  counter-reset: h6;
+  font-size: 11pt;
+  font-weight: bold;
+}
+
+h2:before {
+  counter-increment: h2;
+  content: counter(h2) ". "
+}
+
+h3:before {
+  counter-increment: h3;
+  content: counter(h2) "." counter(h3) ". "
+}
+
+h4:before {
+  counter-increment: h4;
+  content: counter(h2) "." counter(h3) "." counter(h4) ". "
+}
+
+h5:before {
+  counter-increment: h5;
+  content: counter(h2) "." counter(h3) "." counter(h4) "." counter(h5) ". "
+}
+
+tbody {
+  border: 1px solid #4472C4;
+}
+
+thead, th{
+  background-color: #4472C4;
+  color: #fff;
+  font-size: bold;
+  border-bottom: 1px solid #4472C4;
+}
+
+tr {
+  border-bottom: 1px solid #4472C4;
+}
+
+tr:nth-child(even) {
+  border-bottom: 1px solid #4472C4;
+  background-color: #D9E2F3;
+  border: 1px solid #4472C4;
+}
+
+tr:nth-child(odd) {
+  border-bottom: 1px solid #4472C4;
+  background-color: #fff;
+  border: 1px solid #4472C4;
+}
+
+td {
+  border-bottom: 1px solid #4472C4;
+  border-left: 1px solid #4472C4;
+}
+
+
+a {
+  color: #000;
+  font-weight: normal;
+}
+
+p a {
+  color: #201751;
+  font-weight: bold;
+}
