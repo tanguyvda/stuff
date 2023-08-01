@@ -101,3 +101,7 @@ p a {
   color: #201751;
   font-weight: bold;
 }
+
+code {
+  background-color: #282c34;
+}
